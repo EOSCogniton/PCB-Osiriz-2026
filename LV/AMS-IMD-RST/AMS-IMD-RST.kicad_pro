@@ -465,6 +465,7 @@
       "single_global_label": "ignore",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
+      "undefined_netclass": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
@@ -638,6 +639,18 @@
     [
       "7d9bad3e-6cf2-4a61-8644-78bfbb2e310d",
       "Root"
+    ],
+    [
+      "51faaed0-0471-499a-9315-dcb7d14024a1",
+      "SCS_Input_Converter"
+    ],
+    [
+      "d57cec0e-b69b-4e9e-b272-7d17425fc8d9",
+      "SCS_Input_Converter1"
+    ],
+    [
+      "69a2ded7-52c2-4d2a-9dd8-18f6752f1aaa",
+      "SCS_Input_Converter2"
     ]
   ],
   "text_variables": {}
