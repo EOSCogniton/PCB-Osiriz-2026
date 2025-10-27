@@ -1,0 +1,182 @@
+(footprint "CAPC2012X130N"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "0805-ren3")
+	(tags "Capacitor")
+	(property "Reference" "C**"
+		(at -4 0 0)
+		(layer "F.SilkS")
+		(uuid "e2cd5dbf-e631-4bcd-a485-00e8ab967f93")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "CAPC2012X130N"
+		(at 0 2.54 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "b8ff080e-c3ea-4106-a971-991bbb755104")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Footprint" "CAPC2012X130N"
+		(at 0 5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c764185b-9674-4cb2-ae3b-82e0fec59d05")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2ed61c26-d0e9-447f-ac87-7cb6e29ab4ca")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "86167fe7-f765-4d8a-bbcb-f629850d969f")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.505 -0.89)
+		(end 1.505 -0.89)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "e2570166-3954-4921-ae45-abb90bd73bb8")
+	)
+	(fp_line
+		(start -1.505 0.89)
+		(end -1.505 -0.89)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "0ff02ed5-ffe1-4b63-9375-f84f89ec4c72")
+	)
+	(fp_line
+		(start 1.505 -0.89)
+		(end 1.505 0.89)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "ef26f1a0-2b26-4d91-bd83-ab5fccf786af")
+	)
+	(fp_line
+		(start 1.505 0.89)
+		(end -1.505 0.89)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "06f2299d-c84f-405c-9ff7-c1927dd3036c")
+	)
+	(fp_line
+		(start -1 -0.625)
+		(end 1 -0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0b1b5171-6ca2-42c4-9e8f-330bd0b95246")
+	)
+	(fp_line
+		(start -1 0.625)
+		(end -1 -0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d83c7b84-ba89-487c-86fa-5a757d71da40")
+	)
+	(fp_line
+		(start 1 -0.625)
+		(end 1 0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "dc9e0d54-dac3-4f4b-8da9-54947fbec21c")
+	)
+	(fp_line
+		(start 1 0.625)
+		(end -1 0.625)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "08bf3881-97bf-4c71-8af8-0f5d30500558")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -4 -5.5 0)
+		(layer "F.Fab")
+		(uuid "bf38bed3-1dda-4922-8aa5-545bc67a0c81")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -0.82 0)
+		(size 1.07 1.47)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "02143262-429c-49b7-a0c9-f4824c384ce2")
+	)
+	(pad "2" smd rect
+		(at 0.82 0)
+		(size 1.07 1.47)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "3f6a35c9-dfe6-4608-a180-9ca79eace1e7")
+	)
+	(model "${EPSA3D}/0805Y1000104JXT.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

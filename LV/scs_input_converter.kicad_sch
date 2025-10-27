@@ -618,211 +618,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transistor_BJT:SS8050"
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "Q"
-				(at 5.08 1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "SS8050"
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-				(at 5.08 -7.366 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://www.secosgmbh.com/datasheet/products/SSMPTransistor/SOT-23/SS8050.pdf"
-				(at 5.08 -4.826 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" "General Purpose NPN Transistor, 1.5A Ic, 25V Vce, SOT-23"
-				(at 34.036 -2.286 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "SS8050 NPN Transistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SOT?23*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SS8050_0_1"
-				(polyline
-					(pts
-						(xy -2.54 0) (xy 0.635 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 1.905) (xy 0.635 -1.905)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 1.27 0)
-					(radius 2.8194)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SS8050_1_1"
-				(polyline
-					(pts
-						(xy 0.635 0.635) (xy 2.54 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 -0.635) (xy 2.54 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(pin input line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "E"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
 	(junction
 		(at 101.6 64.77)
@@ -1042,7 +837,7 @@
 		)
 		(uuid "990c9def-36d9-4399-b4d4-e0c9c2875fb8")
 	)
-	(hierarchical_label "+1V"
+	(hierarchical_label "+3.5V"
 		(shape input)
 		(at 109.22 87.63 180)
 		(effects
@@ -1164,7 +959,7 @@
 			(uuid "75815393-619a-4e43-9daa-aeec00eb969d")
 		)
 		(instances
-			(project ""
+			(project "AMS-IMD-RST"
 				(path "/7d9bad3e-6cf2-4a61-8644-78bfbb2e310d/51faaed0-0471-499a-9315-dcb7d14024a1"
 					(reference "U2")
 					(unit 1)
@@ -1175,6 +970,97 @@
 				)
 				(path "/7d9bad3e-6cf2-4a61-8644-78bfbb2e310d/d57cec0e-b69b-4e9e-b272-7d17425fc8d9"
 					(reference "U5")
+					(unit 1)
+				)
+			)
+			(project "scs_input_converter"
+				(path "/8b045c68-f2ee-46b4-b98d-dfb029bb17f8"
+					(reference "U?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:TLV172IDCK")
+		(at 90.17 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "67de948a-3243-4238-981f-f5ae175df6ba")
+		(property "Reference" "U9"
+			(at 105.41 58.3498 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TLV172IDCK"
+			(at 105.41 60.8898 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-353_SC-70-5"
+			(at 95.25 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tlv172.pdf"
+			(at 90.17 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Low-power Operational Amplifier, SOT-353"
+			(at 90.17 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "976c2700-2921-43b9-964b-66609b237683")
+		)
+		(pin "4"
+			(uuid "2c74acdd-31b4-4e68-aab9-19360ea31922")
+		)
+		(pin "5"
+			(uuid "68a17592-6f48-4fd7-9472-5eb4d7e2455b")
+		)
+		(pin "1"
+			(uuid "7ee9cfd6-f54e-4ac1-a343-a9657fb85ecf")
+		)
+		(pin "3"
+			(uuid "616b0da5-e0bf-499a-a379-8efff682b20a")
+		)
+		(instances
+			(project ""
+				(path "/7d9bad3e-6cf2-4a61-8644-78bfbb2e310d/51faaed0-0471-499a-9315-dcb7d14024a1"
+					(reference "U9")
+					(unit 1)
+				)
+				(path "/7d9bad3e-6cf2-4a61-8644-78bfbb2e310d/69a2ded7-52c2-4d2a-9dd8-18f6752f1aaa"
+					(reference "U17")
+					(unit 1)
+				)
+				(path "/7d9bad3e-6cf2-4a61-8644-78bfbb2e310d/d57cec0e-b69b-4e9e-b272-7d17425fc8d9"
+					(reference "U10")
 					(unit 1)
 				)
 			)
@@ -1258,7 +1144,7 @@
 			(uuid "8280e78b-ae75-4ae4-9a56-da0350992898")
 		)
 		(instances
-			(project ""
+			(project "AMS-IMD-RST"
 				(path "/7d9bad3e-6cf2-4a61-8644-78bfbb2e310d/51faaed0-0471-499a-9315-dcb7d14024a1"
 					(reference "U2")
 					(unit 2)
@@ -1270,6 +1156,12 @@
 				(path "/7d9bad3e-6cf2-4a61-8644-78bfbb2e310d/d57cec0e-b69b-4e9e-b272-7d17425fc8d9"
 					(reference "U5")
 					(unit 2)
+				)
+			)
+			(project "scs_input_converter"
+				(path "/8b045c68-f2ee-46b4-b98d-dfb029bb17f8"
+					(reference "U?")
+					(unit 1)
 				)
 			)
 		)
@@ -1343,7 +1235,7 @@
 			(uuid "1d4bdeca-7e32-461c-8785-b8097790b8da")
 		)
 		(instances
-			(project ""
+			(project "AMS-IMD-RST"
 				(path "/7d9bad3e-6cf2-4a61-8644-78bfbb2e310d/51faaed0-0471-499a-9315-dcb7d14024a1"
 					(reference "U14")
 					(unit 1)
@@ -1357,87 +1249,9 @@
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:SS8050")
-		(at 87.63 83.82 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b0e22bf2-73be-4c13-a5f3-77b800fb3fee")
-		(property "Reference" "Q7"
-			(at 92.71 82.5499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SS8050"
-			(at 92.71 85.0899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 92.71 91.186 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.secosgmbh.com/datasheet/products/SSMPTransistor/SOT-23/SS8050.pdf"
-			(at 92.71 88.646 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "General Purpose NPN Transistor, 1.5A Ic, 25V Vce, SOT-23"
-			(at 121.666 86.106 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "36e9bdd5-b17c-4439-ad8b-12007e89919e")
-		)
-		(pin "1"
-			(uuid "81c50335-9099-43b9-8005-4e7875f13216")
-		)
-		(pin "3"
-			(uuid "b0c00c9f-79fc-4982-b854-8d06ca4a983f")
-		)
-		(instances
-			(project ""
-				(path "/7d9bad3e-6cf2-4a61-8644-78bfbb2e310d/51faaed0-0471-499a-9315-dcb7d14024a1"
-					(reference "Q7")
-					(unit 1)
-				)
-				(path "/7d9bad3e-6cf2-4a61-8644-78bfbb2e310d/69a2ded7-52c2-4d2a-9dd8-18f6752f1aaa"
-					(reference "Q9")
-					(unit 1)
-				)
-				(path "/7d9bad3e-6cf2-4a61-8644-78bfbb2e310d/d57cec0e-b69b-4e9e-b272-7d17425fc8d9"
-					(reference "Q8")
+			(project "scs_input_converter"
+				(path "/8b045c68-f2ee-46b4-b98d-dfb029bb17f8"
+					(reference "U?")
 					(unit 1)
 				)
 			)
@@ -1499,31 +1313,31 @@
 			)
 		)
 		(pin "8"
-			(uuid "da41dd17-d1a2-4b3e-9772-429a1a7fcba8")
+			(uuid "da41dd17-d1a2-4b3e-9772-429a1a7fcba9")
 		)
 		(pin "2"
-			(uuid "41e55951-496f-4d4e-831e-cc7e661a90c9")
+			(uuid "41e55951-496f-4d4e-831e-cc7e661a90ca")
 		)
 		(pin "4"
-			(uuid "6cd54c47-858c-4978-a96f-f719dd887ee0")
+			(uuid "6cd54c47-858c-4978-a96f-f719dd887ee1")
 		)
 		(pin "7"
-			(uuid "70b109e8-677b-41b1-80e6-a62413b60ce6")
+			(uuid "70b109e8-677b-41b1-80e6-a62413b60ce7")
 		)
 		(pin "3"
-			(uuid "c586f54a-2baa-44cf-ab2d-20be16c83b19")
+			(uuid "c586f54a-2baa-44cf-ab2d-20be16c83b1a")
 		)
 		(pin "6"
-			(uuid "75545d15-b2d6-4156-9f2d-36b26f39b2a8")
+			(uuid "75545d15-b2d6-4156-9f2d-36b26f39b2a9")
 		)
 		(pin "5"
-			(uuid "b208e222-5e07-4217-883a-0aaacb8504ad")
+			(uuid "b208e222-5e07-4217-883a-0aaacb8504ae")
 		)
 		(pin "1"
-			(uuid "8280e78b-ae75-4ae4-9a56-da0350992898")
+			(uuid "8280e78b-ae75-4ae4-9a56-da0350992899")
 		)
 		(instances
-			(project ""
+			(project "AMS-IMD-RST"
 				(path "/7d9bad3e-6cf2-4a61-8644-78bfbb2e310d/51faaed0-0471-499a-9315-dcb7d14024a1"
 					(reference "U2")
 					(unit 3)
@@ -1537,88 +1351,9 @@
 					(unit 3)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:TLV172IDCK")
-		(at 90.17 64.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fe1c7363-7f90-4b4f-ae7d-56a5d4e10158")
-		(property "Reference" "U11"
-			(at 105.41 58.3498 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TLV172IDCK"
-			(at 105.41 60.8898 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-5-8_PD5.08_Window"
-			(at 95.25 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tlv172.pdf"
-			(at 90.17 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Low-power Operational Amplifier, SOT-353"
-			(at 90.17 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "7ed045c9-0826-4e1f-9615-2603f2d44c90")
-		)
-		(pin "4"
-			(uuid "98a24416-5481-4276-b9b0-434e0d5bcdd7")
-		)
-		(pin "3"
-			(uuid "506ce430-2cf1-4e12-a0fd-ea39b4bfe872")
-		)
-		(pin "5"
-			(uuid "e8785050-131e-4dfa-83b9-da7d7c392df5")
-		)
-		(pin "1"
-			(uuid "520208a3-c3cb-4fc0-8153-fe23128373e6")
-		)
-		(instances
-			(project ""
-				(path "/7d9bad3e-6cf2-4a61-8644-78bfbb2e310d/51faaed0-0471-499a-9315-dcb7d14024a1"
-					(reference "U11")
-					(unit 1)
-				)
-				(path "/7d9bad3e-6cf2-4a61-8644-78bfbb2e310d/69a2ded7-52c2-4d2a-9dd8-18f6752f1aaa"
-					(reference "U13")
-					(unit 1)
-				)
-				(path "/7d9bad3e-6cf2-4a61-8644-78bfbb2e310d/d57cec0e-b69b-4e9e-b272-7d17425fc8d9"
-					(reference "U12")
+			(project "scs_input_converter"
+				(path "/8b045c68-f2ee-46b4-b98d-dfb029bb17f8"
+					(reference "U?")
 					(unit 1)
 				)
 			)
